@@ -1,7 +1,7 @@
 %define module	Tree-DAG_Node
 %define name	perl-%{module}
 %define version 1.05
-%define release %mkrel 3
+%define release %mkrel 4
 
 Name:		%{name}
 Version:	%{version}
@@ -27,7 +27,7 @@ having a node be its own mother or ancestor, or having a node have two
 mothers).
 
 %prep
-%setup -n %{module}-%{version}
+%setup -q -n %{module}-%{version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
