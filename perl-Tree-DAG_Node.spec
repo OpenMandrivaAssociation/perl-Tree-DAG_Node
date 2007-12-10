@@ -1,7 +1,7 @@
 %define module	Tree-DAG_Node
 %define name	perl-%{module}
-%define version 1.05
-%define release %mkrel 4
+%define version 1.06
+%define release %mkrel 1
 
 Name:		%{name}
 Version:	%{version}
@@ -9,13 +9,13 @@ Release:	%{release}
 Summary:	Class for representing nodes in a tre
 License:	GPL or Artistic
 Group:		Development/Perl
-Source:		http://search.cpan.org/CPAN/authors/id/S/SB/SBURKE/%{module}-%{version}.tar.bz2
 Url:		http://search.cpan.org/dist/%{module}
-BuildRoot:	%{_tmppath}/%{name}-%{version}
+Source:     http://www.cpan.org/modules/by-module/Tree/%{module}-%{version}.tar.gz
 %if %{mdkversion} < 1010
 Buildrequires:	perl-devel
 %endif
 Buildarch:	noarch
+BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 %description
 This class encapsulates/makes/manipulates objects that represent nodes in a
