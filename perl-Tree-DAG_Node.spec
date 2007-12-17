@@ -15,7 +15,6 @@ Source:     http://www.cpan.org/modules/by-module/Tree/%{module}-%{version}.tar.
 Buildrequires:	perl-devel
 %endif
 Buildarch:	noarch
-BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 %description
 This class encapsulates/makes/manipulates objects that represent nodes in a
