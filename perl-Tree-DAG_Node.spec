@@ -1,7 +1,7 @@
 %define module	Tree-DAG_Node
 %define name	perl-%{module}
 %define version 1.06
-%define release %mkrel 1
+%define release %mkrel 2
 
 Name:		%{name}
 Version:	%{version}
