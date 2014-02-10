@@ -1,14 +1,14 @@
 %define modname	Tree-DAG_Node
-%define modver	1.06
+%define modver 1.20
 
 Summary:	Class for representing nodes in a tre
 Name:		perl-%{modname}
 Version:	%perl_convert_version %{modver}
-Release:	10
+Release:	1
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{modname}
-Source0:	http://www.cpan.org/modules/by-module/Tree/%{modname}-%{modver}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Tree/Tree-DAG_Node-%{modver}.tgz
 BuildArch:	noarch
 BuildRequires:	perl-devel
 
@@ -38,4 +38,5 @@ make test
 %doc ChangeLog README
 %{perl_vendorlib}/Tree
 %{_mandir}/man3/*
+
 
