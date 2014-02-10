@@ -35,7 +35,7 @@ mothers).
 make test
 
 %files 
-%doc ChangeLog README
+%doc  README
 %{perl_vendorlib}/Tree
 %{_mandir}/man3/*
 
