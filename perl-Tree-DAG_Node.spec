@@ -12,6 +12,7 @@ Url:		http://search.cpan.org/dist/%{modname}
 Source0:	http://www.cpan.org/modules/by-module/Tree/%{modname}-%{modver}.tgz
 BuildArch:	noarch
 BuildRequires:	perl-devel
+BuildRequires: perl(File::Slurp::Tiny)
 
 %description
 This class encapsulates/makes/manipulates objects that represent nodes in a
