@@ -10,6 +10,8 @@ Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{modname}
 Source0:	http://www.cpan.org/modules/by-module/Tree/Tree-DAG_Node-%{modver}.tgz
 BuildArch:	noarch
+BuildRequires:	perl(Test::More)
+BuildRequires:	perl(File::Slurp::Tiny)
 BuildRequires:	perl-devel
 
 %description
