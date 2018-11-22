@@ -4,10 +4,10 @@
 Summary:	Class for representing nodes in a tre
 Name:		perl-%{modname}
 Version:	%perl_convert_version %{modver}
-Release:	2
+Release:	3
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{modname}
+Url:		http://metacpan.org/pod/Tree::DAG_Node
 Source0:	http://www.cpan.org/modules/by-module/Tree/Tree-DAG_Node-%{modver}.tgz
 BuildArch:	noarch
 BuildRequires:	perl(Test::More)
