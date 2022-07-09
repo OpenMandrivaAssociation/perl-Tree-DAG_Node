@@ -1,10 +1,10 @@
 %define modname	Tree-DAG_Node
-%define modver 1.31
+%define modver 1.32
 
 Summary:	Class for representing nodes in a tre
 Name:		perl-%{modname}
 Version:	%perl_convert_version %{modver}
-Release:	3
+Release:	1
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		http://metacpan.org/pod/Tree::DAG_Node
