@@ -1,14 +1,13 @@
 %define modname	Tree-DAG_Node
-%define modver 1.32
 
-Summary:	Class for representing nodes in a tre
+Summary:	Class for representing nodes in an N-ary tree
 Name:		perl-%{modname}
-Version:	%perl_convert_version %{modver}
-Release:	3
+Version:	1.32
+Release:	1
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		https://metacpan.org/pod/Tree::DAG_Node
-Source0:	http://www.cpan.org/modules/by-module/Tree/Tree-DAG_Node-%{modver}.tgz
+Source0:	http://www.cpan.org/modules/by-module/Tree/Tree-DAG_Node-%{version}.tgz
 BuildArch:	noarch
 BuildRequires:	perl(Test::More)
 BuildRequires:	perl(File::Slurp::Tiny)
@@ -24,14 +23,14 @@ having a node be its own mother or ancestor, or having a node have two
 mothers).
 
 %prep
-%setup -qn %{modname}-%{modver}
+%autosetup -p1 -n %{modname}-%{version}
 
 %build
-%__perl Makefile.PL INSTALLDIRS=vendor
-%make
+perl Makefile.PL INSTALLDIRS=vendor
+%make_build
 
 %install
-%makeinstall_std
+%make_install
 
 %check
 make test
@@ -40,5 +39,3 @@ make test
 %doc  README
 %{perl_vendorlib}/Tree
 %{_mandir}/man3/*
-
-
